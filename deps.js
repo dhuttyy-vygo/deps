@@ -80,7 +80,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
   
-$(".hamburger, .booking-btn, .form-side-close, .menu, .menu--ham").on("click", function () {
+$(".hamburger, [booking-btn]").on("click", function () {
   $(this).toggleClass("open");
   if ($(this).hasClass("open")) {
     smoother.paused(true);
