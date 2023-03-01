@@ -80,14 +80,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
   
-$(".hamburger, [booking-btn]").on("click", function () {
+$(".hamburger, .booking-btn").on("click", function () {
   $(this).toggleClass("open");
   if ($(this).hasClass("open")) {
     smoother.paused(true);
   } else {
     smoother.paused(false);
   }
-});  
+});
+
+
 
 $('.form_button, .radio_button').click(function() {
 	$('.form_next').click();
